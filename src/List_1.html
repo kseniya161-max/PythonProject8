@@ -2,9 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Стили для боковой панели */
+        .sidebar {
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 250px;
+            background-color: black;
+            padding-top: 20px;
+        }
+        .nav-link {
+            color: white;
+        }
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+        .card {
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
+    <div class="sidebar">
+         <h5 class="text-white text-center">Меню</h5>
+        <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            <a class="nav-link" href="#">Категории</a>
+            <a class="nav-link" href="#">Заказы</a>
+            <a class="nav-link disabled" aria-disabled="true">Контакты</a>
+            <div class="dropdown mt-auto text-center">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Пользователь
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">В профиль</a>
+            <a class="dropdown-item" href="#">Выйти</a>
+        </div>
+    </div>
+</nav>
+</div>
 
+    <div class="content text-center">
+            <h1>Главная</h1>
+            <p class="h5">Вы находитесь на сайте предназначенном для продажи товаров</p>
+            <div class="container mt-4">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="..." class="card-img-top" alt="Товар 1">
+                        <div class="card-body">
+                            <h5 class="card-title">100$</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="..." class="card-img-top" alt="Товар 2">
+                        <div class="card-body">
+                            <h5 class="card-title">200$</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="..." class="card-img-top" alt="Товар 3">
+                        <div class="card-body">
+                            <h5 class="card-title">300$</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
+</script>
 </body>
 </html>
