@@ -27,6 +27,12 @@
         .card {
             border-radius: 15px;
         }
+        <style>
+        .mt-custom {
+            margin-top: 50px;
+        }
+</style>
+
     </style>
 </head>
 <body>
@@ -51,45 +57,45 @@
 </div>
 </nav>
 </div>
-    <div class="content text-center">
-            <h1>Главная</h1>
-            <p class="h5">Вы находитесь на сайте предназначенном для продажи товаров</p>
-            <div class="container mt-4">
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card mb-4 me-4">
-                        <img src="..." class="card-img-top" alt="Товар 1">
-                        <div class="card-body">
-                            <h5 class="card-title">100$</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Купить</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 me-4">
-                        <img src="..." class="card-img-top" alt="Товар 2">
-                        <div class="card-body">
-                            <h5 class="card-title">200$</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Купить</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 me-4">
-                        <img src="..." class="card-img-top" alt="Товар 3">
-                        <div class="card-body">
-                            <h5 class="card-title">300$</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <a href="#" class="btn btn-primary">Купить</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
+    <div class="content text-center">
+            <h1 class="mt-5">Главная</h1>
+            <div class="d-flex">
+    <div class="w-50 mt-5">
+        <div class="w-75 border p-3">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email address" aria-label="Email" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Сообщение</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-light border border-primary">Отправить</button>
+            </form>
+        </div>
     </div>
+    <div class="w-50">
+        <h5 class="mt-5">Наши контакты</h5>
+        <div class="mt-2">
+            <p>Пожалуйста, заполните форму слева.
+                Пожалуйста, заполните форму слева.
+                Пожалуйста, заполните форму слева.
+                Пожалуйста, заполните форму слева.</p>
+        </div>
+</div>
+
+
+</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js">
 </script>
 </body>
